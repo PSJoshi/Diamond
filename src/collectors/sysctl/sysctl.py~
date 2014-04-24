@@ -159,7 +159,7 @@ class SysctlHardeningCollector(diamond.collector.Collector):
         """
         config = super(SysctlHardeningCollector, self).get_default_config()
         config.update({
-            # 'path': 'sysctlharden',
+            'path': 'sysctlharden',
             'use_sudo': False,
             'sudo_cmd': '/usr/bin/sudo',
             'bin': '/sbin/sysctl',
